@@ -9,7 +9,7 @@ import { expressMiddleware } from "@apollo/server/express4";
 import { typeDefs } from "./graphql/schema";
 import { resolvers } from "./graphql/resolvers";
 import { buildContext } from "./graphql/context";
-import { AuthService } from "./modules/auth/auth.service";
+import { AuthService } from "./models/auth/auth.service";
 import { getTokenFromRequest } from "./middlewares/auth";
 
 export const createApp = async () => {

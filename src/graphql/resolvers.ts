@@ -1,4 +1,4 @@
-import { authResolvers } from "../modules/auth/auth.resolver";
+import { authResolvers } from "../models/auth/auth.resolver";
 
 export const resolvers = {
   Query: {

@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import crypto from "crypto";
-import { IUser } from "../modules/user/user.model";
+import { IUser } from "../models/user/user.model";
 
 const ACCESS_SECRET = process.env.JWT_ACCESS_SECRET as string;
 const REFRESH_SECRET = process.env.JWT_REFRESH_SECRET as string;

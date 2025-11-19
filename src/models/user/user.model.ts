@@ -1,18 +1,5 @@
 import mongoose, { Schema, Document } from "mongoose";
-
-export interface IRefreshToken {
-  tokenHash: string;
-  createdAt: Date;
-  expiresAt: Date;
-}
-
-export interface IUser extends Document {
-  name: string;
-  email: string;
-  password: string; // hashed
-  refreshTokens: IRefreshToken[];
-  createdAt: Date;
-}
+import { IUser,IRefreshToken } from "../../types/models/user";
 
 const RefreshTokenSchema = new Schema<IRefreshToken>({
   tokenHash: { type: String, required: true },

@@ -1,4 +1,5 @@
-import { User, IUser } from "../user/user.model";
+import { User } from "../user/user.model";
+import { IUser } from "../../types/models/user";
 import argon2 from "argon2";
 import { createAccessToken, generateRefreshTokenPair, refreshTokenExpiryDate } from "../../utils/jwt";
 

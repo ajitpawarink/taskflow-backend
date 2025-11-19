@@ -1,0 +1,1 @@
+//Any global interfaces and types can be defined here.
