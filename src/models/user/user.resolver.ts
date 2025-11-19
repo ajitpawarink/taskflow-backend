@@ -9,6 +9,15 @@ export const userResolvers = {
 
       return await User.findById(context.user.id);
     },
+    users: async () => {
+      const users = await User.find().lean();
+      return users.map(u => ({
+        id: u._id.toString(),
+        name: u.name,
+        email: u.email,
+        createdAt: u.createdAt,
+      }));
+    },
   },
 
   Mutation: {
@@ -17,7 +26,7 @@ export const userResolvers = {
 
       // Check existing user
       const existing = await User.findOne({ email });
-      if (existing) throw new Error("Email already registered.");
+      if (existing) throw new Error("Email already registered......");
 
       // Encrypt password
       const hashedPassword = await bcrypt.hash(password, 10);
