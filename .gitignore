@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+dist/
+build/
+tmp/
+temp/
+
+# MacOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
+
+# MongoDB local data (if using local database folder)
+data/
+dump/
+
+# Coverage (if using jest or other test coverage)
+coverage/
+
+# npm package lock
+package-lock.json
+yarn.lock
+
+# Optional: debugging
+.idea/
+*.sublime-workspace
+*.sublime-project
